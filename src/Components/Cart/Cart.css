@@ -1,0 +1,159 @@
+.Cart {
+    display: flex;
+    position: fixed;
+  
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 12px;
+    right: 10px;
+    top: 95px;
+    height: 500px;
+    width: 450px;
+    background-color: aliceblue;
+    padding: 15px 10px;
+}
+.cartProdList{
+    overflow: auto;
+}
+/* Scroll designe */
+.cartProdList::-webkit-scrollbar {
+    width: 15px;
+}
+
+.cartProdList::-webkit-scrollbar-track {  
+    margin-bottom:70px;
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 12px;
+}
+
+.cartProdList::-webkit-scrollbar-thumb {
+    background: rgb(170, 170, 170);
+    border-radius: 12px;
+    height:50%;
+}
+/* end */
+
+.CartTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.prodInCart {
+    display: flex;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid black;
+    flex-direction: row;
+    height: 206px;
+    width: 95%;
+    margin-top: 10px;
+}
+
+.CartImgDiv {
+    display: flex;
+    flex-direction: column;
+    width: 159px;
+}
+
+.CartImg {
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    height: 206px;
+    width: 159px
+}
+
+.CartProdContent {
+    display: flex;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.CartProdBrand {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.CartProdPrice {
+    display: flex;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.CartBtns {
+    display: flex;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    justify-content: space-around;
+    height: 100%;
+
+}
+
+.BtnDiv_RemoveFrCart {
+    display: flex;
+    align-items: center;
+
+}
+
+.BtnDiv_Buy {
+    display: flex;
+    align-items: center;
+}
+
+.btn_RemoveFrCart {
+    height: 40px;
+    width: 120px;
+    font-size: 15px;
+    margin-left: 25px;
+    background-color: #95d5ec;
+    border-radius: 5px;
+}
+
+.btn_RemoveFrCart:hover {
+    background-color: rgb(253, 42, 42);
+    color: white;
+    border: none;
+}
+
+.btn_Buy {
+    height: 40px;
+    width: 70px;
+    margin-right: 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #95d5ec;
+}
+
+.btn_Buy:hover {
+    background-color: rgb(23, 204, 23);
+    color: white;
+    border: none;
+}
+.BuyAllDiv{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0px;
+    background-color: aliceblue;
+    
+    height:80px;
+    width:95%
+    
+}
+.btn_buyAll{
+    margin-top: 15px;
+    height:50px;
+    width:120px;
+    border: none;
+    border-radius: 5px;
+    background-color: #95d5ec;
+}

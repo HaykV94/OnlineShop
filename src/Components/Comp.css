@@ -1,0 +1,390 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    padding: 30px;
+    color: black;
+}
+
+#nav {
+    background-color: rgb(200, 222, 228);
+    display: block;
+    text-align: center;
+    padding: 10px 80px;
+}
+
+#nav:hover {
+    background-color: #95d5ec;
+    border-top: 1px ridge rgb(194, 191, 191);
+    border-bottom: 1px ridge rgb(194, 191, 191);
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    background-color: lightblue;
+    height: 50px;
+    z-index: 10;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.menuHome {
+    display: flex;
+    justify-content: left;
+}
+
+.menuNavBar {
+    display: flex;
+    justify-content: center;
+}
+
+.CartProf {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: right;
+}
+
+.profile {
+    padding: 13px 35px;
+    font-size: 20px;
+    border: none;
+    background-color: lightblue;
+}
+.profUL {
+    list-style: none;
+    display: none;
+    border: 1px solid black;
+    position: absolute;
+    right: 39px;
+    top: 50px;
+    z-index: 10;
+}
+
+.btn_profLi {
+    padding: 10px 25px;
+    background-color: rgb(200, 222, 228);
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+}
+
+.btn_profLi:hover {
+    background-color: #95d5ec;
+}
+
+.profile:hover {
+    border-left: 1px ridge black;
+    border-right: 1px solid black;
+    background-color: rgb(200, 222, 228);
+    color: rgb(65, 65, 65);
+}
+
+.profDropdown:hover .profUL{
+    display: block;
+}
+
+#cart {
+    padding: 12px 15px;
+    font-size: 20px;
+    border: none;
+    background-color: lightblue;
+}
+
+#cart:hover {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    background-color: rgb(200, 222, 228);
+}
+
+#cart:hover .fa-shopping-cart {
+    color: rgb(65, 65, 65);
+}
+
+.Men:hover #MenAngle {
+    transform: rotate(90deg);
+}
+
+.Men {
+    display: flex;
+    padding: 15px 35px;
+}
+
+#MenAngle {
+    margin-left: 15%;
+    transition: 200ms;
+}
+
+.Men0 {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 50px;
+}
+
+.Men:hover .Men0 {
+    display: block;
+}
+
+.Women {
+    display: flex;
+    padding: 15px 35px;
+}
+
+#WomenAngle {
+    margin-left: 15%;
+    transition: 200ms;
+}
+
+.Women1 {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 50px;
+}
+
+.Women:hover #WomenAngle {
+    transform: rotate(90deg);
+}
+
+.Women:hover .Women1 {
+    display: block;
+}
+
+.Kids {
+    display: flex;
+    padding: 15px 35px;
+}
+
+#KidsAngle {
+    margin-left: 15%;
+    transition: 200ms;
+}
+
+.Kids2 {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 50px;
+
+}
+
+.Kids:hover #KidsAngle {
+    transform: rotate(90deg);
+}
+
+.Kids:hover .Kids2 {
+    display: block;
+}
+
+.NavBarUl {
+
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img {
+    height: 405px;
+    width: 317px;
+    /* position:relative; */
+    /* z-index: -1; */
+}
+
+h4 {
+    text-align: center;
+}
+
+.selectOpt {
+    display: inline-block;
+    margin-top: 150px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.selectOpt:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.imgTitle {
+    text-align: center;
+}
+
+.ads {
+    padding-top: 150px;
+    width: 100%;
+}
+
+.prodDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    position: absolute;
+    z-index: -2;
+}
+
+.showProduct {
+    padding: 9px;
+    position: relative;
+    
+}
+
+.showProduct:hover .QuickView {
+    display: block;
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.QuickView {
+    border-radius: 5px;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    display: none;
+    border: none;
+    padding: 10px 20px;
+    opacity: 0.77;
+}
+
+.QuickView:hover {
+    opacity: 0.9;
+}
+
+.quickV_Window {
+    position: fixed;
+    top: 15%;
+    left: 30%;
+    padding: 25px;
+    border-radius: 2%;
+    background-color: white;
+    border: 1px ridge rgb(219, 219, 219);
+}
+
+.quickV_Window .prodDiv {
+    opacity: 0.9;
+}
+
+.ImgBrand {
+    padding-left: 0px;
+
+}
+
+.QVWindContent {
+    margin-left: 3%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.btnOnQV {
+    display: flex;
+    flex-direction: column;
+}
+
+.btnFav {
+    display: flex;
+    background-color: lightblue;
+    padding: 3% 20px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+}
+
+.btnFav:hover {
+    color: rgb(24, 23, 23);
+    background-color: rgb(200, 220, 228);
+}
+
+.fa-heart-o {
+    flex-direction: row;
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+.fa-heart {
+    border: none;
+    color: red;
+}
+
+.btnAdd {
+    display: flex;
+    background-color: lightblue;
+    margin-top: 5%;
+    padding: 3% 20px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+}
+
+.btnAdd:hover {
+    color: rgb(24, 23, 23);
+    background-color: rgb(200, 220, 228);
+}
+
+.btnAddContent {
+    flex-direction: column;
+    flex-grow: 2;
+    margin-top: 5px;
+}
+
+#cartIcon {
+    flex-direction: row;
+    font-size: 20px;
+    justify-self: center;
+}
+
+.cartCount {
+    font-size: 15px;
+}
+
+.btnExit {
+    border: none;
+    background-color: transparent;
+    border-radius: 12px;
+    padding: 0px 8px;
+    font-size: 20px;
+    position: absolute;
+    z-index: 5;
+    top: 0px;
+    right: 0px;
+
+}
+
+.btnExit:hover {
+    background-color: red;
+    color: white;
+}
+
+.prodDescript {
+    margin-top: 25px;
+    text-align: center;
+}
+
+#home {
+    padding: 15px 35px;
+
+}
+
+#home:hover {
+    background-color: rgb(200, 222, 228);
+    border-right: 1px ridge black;
+}
+
+.price {
+    padding-top: 0%;
+}
+
+.brandName {
+    padding-top: 0%;
+    text-align: center;
+}
+

@@ -1,0 +1,106 @@
+.footerMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    height: 150px;
+    width: 100%;
+    background-color: lightblue;
+}
+
+.InfoShopAcc {
+    display: flex;
+    height: 120px;
+}
+
+/*--> Footer 1st section*/
+.footerInfo {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+.footerPhoneMail{
+    height:60px;
+}
+.footerPhMplacing{
+    padding-top:15px;
+    padding-left: 15px;
+}
+.mailLink{
+    padding: 5px;
+    padding-bottom: 0;
+    border-bottom: 0.8px solid transparent;
+    transition: 300ms;
+}
+.mailLink:hover{
+    border-color: black;
+}
+.footerSocial{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height:60px;
+}
+.socialNetIco{
+    margin-right:5px;
+    padding:1px;
+    margin-bottom: 35px;
+    border-radius: 5px;
+}
+/* Footer 1st section <--*/
+
+/*--> Footer 2nd section*/
+.footerShopping {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.footerTitle {
+    height: 35px;
+    text-align: center;
+}
+
+.footerTitleTxt {
+    padding-top: 5px;
+}
+
+.footerList {
+    height: 25px;
+    text-align: center;
+}
+
+.footerLink {
+    padding: 3px 20px;
+    border-bottom: 1px solid transparent;
+    transition: 300ms;
+}
+.footerLink:hover{
+    border-color: black;  
+}
+/*Footer 2nd section <--*/
+
+/*--> Footer 3rd section */
+.footerAccount {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.footerBtn{
+    padding: 3px 20px;
+    background-color: lightblue;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid transparent;
+    transition: 300ms;
+}
+.footerBtn:hover{
+    border-color:black;
+}
+/* Footer 3rd section <-- */
+.footerTxt {
+    display: flex;
+    justify-content: center;
+    height: 20px;
+}
